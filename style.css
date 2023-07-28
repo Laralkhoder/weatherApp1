@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Work Sans', sans-serif;
+}
+body{
+  /* background-image:url("img/sl_031821_41530_221.jpg")  ; */
+  background-color: #9dcfec;  
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main{
+  width: 70%;
+  height: 450px;
+  margin:25px auto;
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  border-radius: 10px;
+  background-Image:url("img/sl_031821_41530_221.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.search{
+  
+  align-self: center;
+  height:fit-content ;
+  width: fit-content;
+  position: relative;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+.search input{
+  width: 300px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 0;
+  font-size: 18px;
+}
+.search input:focus{
+  outline: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.search button{
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+border-radius: 5px;
+border: 0;
+color: #222222b4;
+background-color: transparent;
+}
+.weather{
+  width: 100%;
+  backdrop-filter: blur(3px);
+  border-radius: 5px;
+  padding: 0px 50px 50px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 50px;
+  /* background-color: rgba(0, 0, 0, 0.096); */
+}
+.left-side{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 20px;
+}
+
+img{
+  width: 15px;
+}
+#icon img{
+  width: 200px;
+}
+#city-name{
+  font-size: 50px;
+  font-weight: 500;
+}
+#date{
+  font-size: 20px;
+}
+#temp{
+  font-size: 50px; 
+}
+#desc{ 
+font-size: 20px;
+}
+.inner{
+  margin-top: 25px;
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+}
+.humid,.win{
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+ font-size: 12px;
+}
+.right-side{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
