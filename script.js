@@ -33,7 +33,7 @@ else{
 }
  // document.querySelector('#icon img').setAttribute('src',`http://openweathermap.org/img/w/${data.weather[0].icon}.png`)
 document.getElementById("desc").innerHTML=data.weather[0].main;
-let icon=data.weather[0].main;
+let icon=data.weather[0].main.toLowerCase();
 document.querySelector('#icon img').setAttribute('src',`weather-img/${icon}.png`)
 
 }
