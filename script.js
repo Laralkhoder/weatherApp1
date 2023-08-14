@@ -20,12 +20,14 @@ let msTime=t.getTime()-t.getTimezoneOffset()*-60000+(data.timezone*1000);
 let datenow=new Date(msTime).toLocaleString();
 document.getElementById("date").innerHTML=datenow;
 if((msTime/1000)>data.sys.sunset){
-  document.getElementsByTagName('main')[0].style.backgroundImage=`url("img/82d40b41-63cf-4a40-930d-d890d5684dd1.jpg")`
+  document.getElementsByTagName('main')[0].style.backgroundImage=`url("./img/82d40b41-63cf-4a40-930d-d890d5684dd1.jpg")`
   document.body.style.backgroundColor="#4A4F49";
+  document.body.style.color="white";
 }
 else{
-  document.getElementsByTagName('main')[0].style.backgroundImage=`url("img/sl_031821_41530_221.jpg")`
+  document.getElementsByTagName('main')[0].style.backgroundImage=`url("./img/sl_031821_41530_221.jpg")`
   document.body.style.backgroundColor="#9dcfec";
+  document.body.style.color="#222";
 
 
 }
