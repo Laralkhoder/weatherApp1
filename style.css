@@ -14,7 +14,7 @@ body{
 main{
   width: 70%;
   height: 450px;
-  margin:25px auto;
+  margin:70px auto;
   display: grid;
   grid-template-rows: 1fr 5fr;
   border-radius: 10px;
